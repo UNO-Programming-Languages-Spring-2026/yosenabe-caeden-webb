@@ -1,4 +1,4 @@
-{ target(X, Y, XX, YY) } :- cell(X, Y), cell(XX, YY).
+{ target(X, Y, XX, YY) } :- cell(X, Y), cell(XX, YY), number(X, Y, N).
 :- target(X, Y, XX, YY), X = XX, Y = YY.
 :- target(X, Y, XX, YY), X != XX, Y != YY.
 
