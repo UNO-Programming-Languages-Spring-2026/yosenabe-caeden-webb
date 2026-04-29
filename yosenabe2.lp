@@ -8,6 +8,8 @@ valid(B, Z) :- B = #count{ X, Y, N : number(X, Y, N) }, Z = #count{ X, Y, XX, YY
 :- target(X, Y, XX, YY), target(X2, Y2, XX2, YY2), X = X2, Y = Y2, XX != XX2.
 :- not valid(B, Z), B = #count{ X, Y, N : number(X, Y, N) }, Z = #count{ X, Y, XX, YY : target(X, Y, XX, YY) }.
 
+% achieved: Moving at least one number into each area.
+
 
 
 #show target/4.
